@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Alinhamento Grid</title>
+    <style type="text/css">
+        .marcador {
+            background: #fe9d9d;
+            border: 1px solid #f94646;
+            height: 120px;
+        }
+
+        .marcador-container {
+            background: #5bf946;
+        }
+
+        .borda {
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Alinhamento vertical (align-items-ALINHAMENTO: start, center, end)</h2>
+        <div class="marcador row align-items-center">
+            <div class="col borda">Área 1</div>
+            <div class="col borda">Área 2</div>
+            <div class="col borda">Área 3</div>
+        </div>
+
+
+        <h2>Alinhamento horizontal individual (align-self-ALINHAMENTO: start, center, end)</h2>
+        <div class="marcador row">
+            <div class="col borda align-self-start">Área 1</div>
+            <div class="col borda align-self-center">Área 2</div>
+            <div class="col borda align-self-end">Área 3</div>
+        </div>
+
+        <h2>Alinhamento horizontal colunas (justify-coontent-ALINHAMENTO: start, center, end)</h2>
+        <div class="marcador row justify-content-center">
+            <div class="col-2 borda">Área 1</div>
+            <div class="col-2 borda">Área 2</div>
+            <div class="col-2 borda">Área 3</div>
+        </div>
+
+        <h2>Distribuição(justify-coontent-DISTRIBUIÇÃO: around, between)</h2>
+        <div class="marcador row justify-content-between">
+            <div class="col-2 borda">Área 1</div>
+            <div class="col-2 borda">Área 2</div>
+            <div class="col-2 borda">Área 3</div>
+        </div>
+
+        <h2>Removendo espaçamento</h2>
+        <div class="row no-gutters">
+            <div class="col-2 borda">Área 1</div>
+            <div class="col-2 borda">Área 2</div>
+            <div class="col-2 borda">Área 3</div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
+</body>
+</html>
